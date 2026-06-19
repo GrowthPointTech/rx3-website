@@ -1,0 +1,52 @@
+/* ============================================================
+   Chisel & Groove Studio — Design Tokens
+   Derived from computed styles extracted via Puppeteer
+   ============================================================ */
+
+:root {
+  /* ── Colors (from getComputedStyle on live site) ── */
+  --cg-black:       #000000;   /* header, footer backgrounds */
+  --cg-charcoal:    #585651;   /* warm dark charcoal — secondary text */
+  --cg-gray:        #404040;   /* body text, headings on light bg */
+  --cg-silver:      #bbbbbb;   /* dividers, subtle borders */
+  --cg-cream:       #fbf0db;   /* warm section backgrounds */
+  --cg-off-white:   #fff8ec;   /* page background */
+  --cg-white:       #ffffff;   /* hero text, nav links on dark bg */
+  --cg-overlay:     rgba(0, 0, 0, 0.5);  /* hero image overlay */
+  --cg-overlay-light: rgba(0, 0, 0, 0.35);
+
+  /* ── Typography ── */
+  /* PP-Fragment (commercial) → Cormorant Garamond (Google, closest high-contrast serif) */
+  /* myriad-pro (Adobe Typekit) → Source Sans 3 (Google, closest humanist sans-serif) */
+  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body:    'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+
+  /* ── Font Sizes (scaled from computed px at 1440px viewport) ── */
+  /* Live: h1=171.52px, h2=119.68px, h3=76.48px — very large display sizes */
+  --text-hero:    clamp(3.5rem,  9vw,  8rem);    /* ~171px at 1440 */
+  --text-display: clamp(3rem,    7vw,  6.5rem);   /* ~119px at 1440 */
+  --text-h2:      clamp(2rem,    4vw,  3.5rem);   /* used for section headings */
+  --text-h3:      clamp(1.5rem,  3vw,  2.5rem);   /* ~76px at 1440 */
+  --text-large:   clamp(1.1rem,  1.5vw, 1.43rem); /* ~22.9px (about page body) */
+  --text-body:    1rem;                            /* 16px */
+  --text-nav:     1.108rem;                        /* ~17.7px */
+  --text-small:   0.875rem;
+
+  /* ── Spacing ── */
+  --space-xs:   0.5rem;   /*  8px */
+  --space-sm:   1rem;     /* 16px */
+  --space-md:   1.5rem;   /* 24px */
+  --space-lg:   2.5rem;   /* 40px */
+  --space-xl:   4rem;     /* 64px */
+  --space-2xl:  6rem;     /* 96px */
+  --space-3xl:  8rem;     /* 128px */
+
+  /* ── Layout ── */
+  --site-max:    1500px;  /* Squarespace max-width */
+  --site-gutter: 4vw;     /* Squarespace --sqs-site-gutter */
+  --site-gutter-mobile: 6vw;
+
+  /* ── Nav ── */
+  --nav-height: 80px;
+  --nav-height-mobile: 64px;
+}

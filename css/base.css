@@ -1,0 +1,101 @@
+/* ============================================================
+   Chisel & Groove Studio — Base Reset & Typography
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--cg-gray);
+  background-color: var(--cg-off-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Headings ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--cg-gray);
+}
+
+h1 { font-size: var(--text-hero); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+h4 { font-size: 1.25rem; }
+
+/* ── Body text ── */
+p {
+  margin-bottom: var(--space-sm);
+  line-height: 1.7;
+}
+
+p:last-child { margin-bottom: 0; }
+
+/* ── Links ── */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover { opacity: 0.7; }
+
+/* ── Images ── */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Lists ── */
+ul, ol { list-style: none; }
+
+/* ── Layout container ── */
+.container {
+  width: 100%;
+  max-width: var(--site-max);
+  margin-inline: auto;
+  padding-inline: var(--site-gutter);
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-inline: var(--site-gutter-mobile);
+  }
+}
+
+/* ── Section spacing ── */
+.section {
+  padding-block: var(--space-2xl);
+}
+
+.section--sm {
+  padding-block: var(--space-xl);
+}
+
+.section--lg {
+  padding-block: var(--space-3xl);
+}
+
+/* ── Color utilities ── */
+.bg-black    { background-color: var(--cg-black); }
+.bg-cream    { background-color: var(--cg-cream); }
+.bg-off-white { background-color: var(--cg-off-white); }
+.text-white  { color: var(--cg-white); }
+.text-gray   { color: var(--cg-gray); }

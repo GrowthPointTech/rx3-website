@@ -1,0 +1,18 @@
+version: 1
+hosting:
+  redirectRules:
+    - source: /about-1
+      target: /about.html
+      status: '301'
+    - source: /our-process
+      target: /our-process.html
+      status: '301'
+    - source: /gallery
+      target: /gallery.html
+      status: '301'
+    - source: /contact
+      target: /contact.html
+      status: '301'
+    - source: /privacy
+      target: /privacy.html
+      status: '301'

@@ -1,0 +1,12 @@
+{
+  "name": "rx3-website",
+  "version": "1.0.0",
+  "description": "Static HTML/CSS website for Chisel & Groove Studio, hosted on AWS Amplify.",
+  "scripts": {
+    "extract-styles": "node tools/extract-styles.js",
+    "serve": "node server.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.43.1"
+  }
+}
