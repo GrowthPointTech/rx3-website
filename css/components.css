@@ -553,14 +553,51 @@
   background-color: var(--cg-charcoal);
 }
 
-.form-success {
+.form-field-error {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: #b00020;
+  margin-top: 4px;
+  display: block;
+  min-height: 1em;
+}
+
+.form-input[aria-invalid="true"],
+.form-textarea[aria-invalid="true"] {
+  border-color: #b00020;
+}
+
+/* Formspree data-fs-success / data-fs-error — hidden until triggered */
+[data-fs-success],
+[data-fs-error] {
   display: none;
+}
+
+[data-fs-success]:not(:empty),
+[data-fs-error]:not(:empty) {
+  display: block;
+}
+
+.form-success,
+[data-fs-success] {
   padding: var(--space-md);
   background-color: var(--cg-cream);
   color: var(--cg-gray);
   font-family: var(--font-body);
   font-size: var(--text-body);
   line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.form-error,
+[data-fs-error]:not([data-fs-error=""]) {
+  padding: var(--space-md);
+  background-color: #fff0f0;
+  color: #b00020;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
 }
 
 /* ── FOOTER ── */

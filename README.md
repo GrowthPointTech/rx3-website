@@ -90,16 +90,9 @@ The commercial fonts (PP-Fragment, myriad-pro via Adobe Typekit) were substitute
 
 The contact page uses [Formspree](https://formspree.io) — a form backend that works with static HTML, requires no server, and has a free tier (50 submissions/month, more than enough for project inquiries).
 
-**To activate the form:**
-1. Create a free account at [formspree.io](https://formspree.io)
-2. Create a new form → copy the endpoint URL (looks like `https://formspree.io/f/xxxxxxxx`)
-3. In `contact.html`, update the form `action` attribute:
-   ```html
-   <form ... action="https://formspree.io/f/xxxxxxxx" ...>
-   ```
-4. Commit and deploy — form submissions will arrive at `sales@chiselandgroovenc.com`
+The form is **already wired up** using the `@formspree/ajax` CDN (endpoint `xeewylep`). Submissions go to `sales@chiselandgroovenc.com`. No configuration needed — it's live.
 
-The success/error states and AJAX submission are already wired up in `js/contact.js`.
+The library handles field-level validation errors, submit button state, and the success/error messages entirely via `data-fs-*` attributes. No custom JS required.
 
 ## Hosting — AWS Amplify
 
@@ -169,7 +162,7 @@ The `reference/` directory is gitignored — these are working files, not source
 | Our Process | `our-process.html` | Live |
 | Gallery | `gallery.html` | Live (10 pieces, lightbox) |
 | About | `about.html` | Live |
-| Contact | `contact.html` | Live (Formspree action URL needs updating) |
+| Contact | `contact.html` | Live (Formspree endpoint `xeewylep` active) |
 | Privacy Policy | `privacy.html` | Live |
 
 ## Security

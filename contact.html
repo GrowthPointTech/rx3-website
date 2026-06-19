@@ -68,33 +68,39 @@
             <h2 class="contact-intro">Start Your Journey</h2>
             <p class="section-body" style="max-width: 100%;">Fill out the form and someone will respond to your inquiry shortly. Or reach us directly at <a href="mailto:sales@chiselandgroovenc.com" style="text-decoration: underline;">sales@chiselandgroovenc.com</a>.</p>
 
-            <form class="contact-form" id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
+            <div class="form-success" data-fs-success>
+              Thank you! Someone will respond to your inquiry shortly.
+            </div>
+            <div class="form-error" data-fs-error></div>
+
+            <form class="contact-form" id="contactForm">
               <div class="form-group">
                 <label class="form-label" for="name">Name</label>
-                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" data-fs-field>
+                <span class="form-field-error" data-fs-error="name"></span>
               </div>
               <div class="form-group">
                 <label class="form-label" for="phone">Phone Number</label>
-                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel" data-fs-field>
+                <span class="form-field-error" data-fs-error="phone"></span>
               </div>
               <div class="form-group">
                 <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="Johndoe@gmail.com" required autocomplete="email">
+                <input class="form-input" type="email" id="email" name="email" placeholder="Johndoe@gmail.com" required autocomplete="email" data-fs-field>
+                <span class="form-field-error" data-fs-error="email"></span>
               </div>
               <div class="form-group">
                 <label class="form-label" for="subject">Subject — Project Title <span aria-hidden="true">*</span></label>
-                <input class="form-input" type="text" id="subject" name="subject" placeholder="e.g. Walnut dining table for 6" required>
+                <input class="form-input" type="text" id="subject" name="subject" placeholder="e.g. Walnut dining table for 6" required data-fs-field>
+                <span class="form-field-error" data-fs-error="subject"></span>
               </div>
               <div class="form-group">
                 <label class="form-label" for="message">Describe your Project Idea <span aria-hidden="true">*</span></label>
-                <textarea class="form-textarea" id="message" name="message" placeholder="Type here..." required></textarea>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Type here..." required data-fs-field></textarea>
+                <span class="form-field-error" data-fs-error="message"></span>
               </div>
-              <button type="submit" class="form-submit">Submit</button>
+              <button type="submit" class="form-submit" data-fs-submit-btn>Submit</button>
             </form>
-
-            <div class="form-success" id="formSuccess">
-              Thank you! Someone will respond to your inquiry shortly.
-            </div>
           </div>
 
           <div>
@@ -149,7 +155,11 @@
     </div>
   </footer>
 
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contactForm', formId: 'xeewylep' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
   <script src="js/nav.js" defer></script>
-  <script src="js/contact.js" defer></script>
 </body>
 </html>
