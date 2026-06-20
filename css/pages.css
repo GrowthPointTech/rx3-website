@@ -96,7 +96,11 @@
 }
 
 /* ── ABOUT PAGE ── */
-.about-hero {}
+.about-hero .hero__title {
+  font-size: clamp(4rem, 11.9vw, 10.72rem);
+  line-height: 0.97;
+  letter-spacing: -0.02em;
+}
 
 .about-section {
   background-color: var(--cg-off-white);
@@ -119,7 +123,9 @@
 .about-heading {
   font-family: var(--font-heading);
   font-weight: 400;
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-size: clamp(2rem, 5.3vw, 4.78rem);
+  line-height: 1.03;
+  letter-spacing: -0.02em;
   color: var(--cg-charcoal);
   margin-bottom: var(--space-md);
 }
