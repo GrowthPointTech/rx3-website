@@ -502,11 +502,15 @@
 
 .form-label {
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 400;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: normal;
+  text-transform: none;
   color: var(--cg-charcoal);
+}
+
+.form-label-required {
+  color: var(--cg-gray);
 }
 
 .form-input,
@@ -514,9 +518,10 @@
   font-family: var(--font-body);
   font-size: var(--text-body);
   color: var(--cg-gray);
-  background-color: var(--cg-white);
-  border: 1px solid var(--cg-silver);
-  padding: 0.75rem 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--cg-silver);
+  padding: 5px 0;
   width: 100%;
   outline: none;
   transition: border-color 0.2s ease;
@@ -526,7 +531,7 @@
 
 .form-input:focus,
 .form-textarea:focus {
-  border-color: var(--cg-charcoal);
+  border-bottom-color: var(--cg-charcoal);
 }
 
 .form-textarea {
@@ -538,12 +543,13 @@
   font-family: var(--font-body);
   font-size: var(--text-body);
   font-weight: 400;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: normal;
+  text-transform: none;
   color: var(--cg-white);
   background-color: var(--cg-black);
   border: none;
   padding: 0.9rem 2.5rem;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   align-self: flex-start;
