@@ -581,8 +581,8 @@
 .form-success,
 [data-fs-success] {
   padding: var(--space-md);
-  background-color: var(--cg-cream);
-  color: var(--cg-gray);
+  background-color: #d4edda;
+  color: #155724;
   font-family: var(--font-body);
   font-size: var(--text-body);
   line-height: 1.6;
