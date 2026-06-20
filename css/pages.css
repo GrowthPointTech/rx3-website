@@ -7,6 +7,10 @@
   background-image: url('../assets/images/hero-main.jpg');
 }
 
+.home-hero .hero__overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 .home-features {
   background-color: var(--cg-off-white);
   padding-block: var(--space-2xl);
