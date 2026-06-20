@@ -21,6 +21,7 @@
 
       if (res.ok) {
         form.style.display = 'none';
+        success.textContent = 'Thank you! Someone will respond to your inquiry shortly.';
         success.style.display = 'block';
       } else {
         submit.disabled = false;
