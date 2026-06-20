@@ -151,8 +151,10 @@
 }
 
 /* ── CONTACT PAGE ── */
-.contact-hero {
-  background-image: url('../assets/images/hero-main.jpg');
+.contact-hero .hero__title {
+  font-size: clamp(4rem, 11.9vw, 10.72rem);
+  line-height: 0.97;
+  letter-spacing: -0.02em;
 }
 
 .contact-section {
