@@ -100,7 +100,7 @@ Same AWS account as GrowthPoint. Two environments:
 
 | Environment | Branch | URL | Password |
 |-------------|--------|-----|----------|
-| **Preview / Staging** | `preview` | [preview.chiselandgroovestudio.com](https://preview.chiselandgroovestudio.com) | `chisel` / `groove` |
+| **Preview / Staging** | `preview` | [preview.chiselandgroovestudio.com](https://preview.chiselandgroovestudio.com) | `chisel` / `grooves` |
 | **Production** | `main` | [chiselandgroovestudio.com](https://chiselandgroovestudio.com) | None |
 
 **Amplify setup:**
