@@ -63,65 +63,40 @@
     <!-- CONTACT SECTION -->
     <section class="section contact-section">
       <div class="container">
-        <div class="contact-details">
-          <div>
-            <h2 class="contact-intro">Start Your Journey</h2>
-            <p class="section-body" style="max-width: 100%;">Fill out the form and someone will respond to your inquiry shortly. Or reach us directly at <a href="mailto:sales@chiselandgroovenc.com" style="text-decoration: underline;">sales@chiselandgroovenc.com</a>.</p>
+        <h2 class="contact-intro">Start Your Journey</h2>
 
-            <form class="contact-form" id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
-              <div class="form-group">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="phone">Phone Number</label>
-                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="Johndoe@gmail.com" required autocomplete="email">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="subject">Subject — Project Title <span aria-hidden="true">*</span></label>
-                <input class="form-input" type="text" id="subject" name="subject" placeholder="e.g. Walnut dining table for 6" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="message">Describe your Project Idea <span aria-hidden="true">*</span></label>
-                <textarea class="form-textarea" id="message" name="message" placeholder="Type here..." required></textarea>
-              </div>
-              <button type="submit" class="form-submit">Submit</button>
-            </form>
-
-            <div class="form-success" id="formSuccess">
-              Thank you! Someone will respond to your inquiry shortly.
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeewylep" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="firstName">First Name</label>
+              <input class="form-input" type="text" id="firstName" name="firstName" autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lastName">Last Name</label>
+              <input class="form-input" type="text" id="lastName" name="lastName" autocomplete="family-name">
             </div>
           </div>
-
-          <div>
-            <h3 style="font-family: var(--font-heading); font-weight: 400; font-size: clamp(1.25rem,2vw,1.75rem); color: var(--cg-gray); margin-bottom: var(--space-md);">Get in Touch</h3>
-            <div style="display: flex; flex-direction: column; gap: var(--space-sm); color: var(--cg-charcoal); font-size: var(--text-body);">
-              <div>
-                <p><strong style="font-weight: 600;">Email</strong></p>
-                <p><a href="mailto:sales@chiselandgroovenc.com" style="text-decoration: underline;">sales@chiselandgroovenc.com</a></p>
-              </div>
-              <div>
-                <p><strong style="font-weight: 600;">Location</strong></p>
-                <p>Pittsboro, NC</p>
-                <p>Free delivery within 50 miles</p>
-              </div>
-              <div>
-                <p><strong style="font-weight: 600;">Service Area</strong></p>
-                <p>Raleigh, Durham, Chapel Hill,<br>Fayetteville, Goldsboro, Sanford</p>
-              </div>
-              <div>
-                <p><strong style="font-weight: 600;">Follow Along</strong></p>
-                <div style="display: flex; gap: var(--space-sm); margin-top: var(--space-xs);">
-                  <a href="https://www.instagram.com/chiselandgroovestudio" target="_blank" rel="noopener" style="color: var(--cg-charcoal);">Instagram</a>
-                  <a href="https://www.facebook.com/share/19k8FDQpKM/" target="_blank" rel="noopener" style="color: var(--cg-charcoal);">Facebook</a>
-                </div>
-              </div>
-            </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number <span class="form-label__note">(optional)</span></label>
+            <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel">
           </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address* <span class="form-label__note">(required)</span></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="Johndoe@gmail.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject - Project Title* <span class="form-label__note">(required)</span></label>
+            <input class="form-input" type="text" id="subject" name="subject" placeholder="Type Here" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Describe your Project Idea* <span class="form-label__note">(required)</span></label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Type Here" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Submit</button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          Thank you! Someone will respond to your inquiry shortly.
         </div>
       </div>
     </section>
@@ -130,22 +105,11 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__inner">
-      <div class="footer__logo">
-        <img src="assets/images/logo.png" alt="Chisel &amp; Groove Studio">
-      </div>
-      <div class="footer__divider"></div>
-      <nav class="footer__links" aria-label="Footer navigation">
+      <div class="footer__wordmark">Chisel &amp; Groove</div>
+      <div class="footer__bottom">
         <a href="privacy.html" class="footer__link">Privacy Policy</a>
-      </nav>
-      <div class="footer__social">
-        <a href="https://www.instagram.com/chiselandgroovestudio" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/share/19k8FDQpKM/" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
+        <p class="footer__copy">&copy;2025</p>
       </div>
-      <p class="footer__copy">&copy;2025 Chisel &amp; Groove Studio</p>
     </div>
   </footer>
 

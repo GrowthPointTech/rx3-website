@@ -110,6 +110,20 @@
   max-width: 100%;
 }
 
+.about-owner-photo {
+  width: 100%;
+  max-width: 460px;
+  height: 360px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin-bottom: var(--space-lg);
+}
+
+@media (max-width: 767px) {
+  .about-owner-photo { height: 260px; max-width: 100%; }
+}
+
 .about-attribution {
   font-family: var(--font-heading);
   font-size: clamp(1rem, 1.5vw, 1.25rem);

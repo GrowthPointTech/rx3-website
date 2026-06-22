@@ -51,18 +51,10 @@
   </div>
 
   <main>
-    <!-- HERO -->
-    <section class="hero hero--short process-hero">
-      <div class="hero__bg" style="background-image: url('assets/images/hero-process.jpg');"></div>
-      <div class="hero__overlay"></div>
-      <div class="hero__content">
-        <h1 class="hero__title">Our Process</h1>
-      </div>
-    </section>
-
     <!-- PROCESS STEPS -->
     <section class="section process-section">
       <div class="container">
+        <h1 class="section-title" style="font-size: var(--text-display); margin-bottom: var(--space-xl);">Process Steps</h1>
         <div class="process-grid">
 
           <div class="process-step">
@@ -96,22 +88,37 @@
     <!-- FAQ -->
     <section class="section process-faq">
       <div class="container">
-        <h2 class="section-title">Frequently Asked Questions</h2>
+        <h2 class="section-title">FAQ's</h2>
         <div class="faq-list">
 
           <div class="faq-item">
-            <h3 class="faq-item__question">What woods do you work in?</h3>
-            <p class="faq-item__answer">We usually work in local hardwoods such as Ash, Birch, Cherry, Maple, Poplar, Walnut, and White Oak.</p>
+            <button class="faq-item__toggle" aria-expanded="false">
+              What woods do you work in?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__answer" hidden>
+              <p>We usually work in local hardwoods such as Ash, Birch, Cherry, Maple, Poplar, Walnut, and White Oak.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h3 class="faq-item__question">What kind of furniture do you build?</h3>
-            <p class="faq-item__answer">We build dining room tables, end tables, coffee tables, nightstands, desks, beds, and more. We also do smaller projects such as custom signs, coasters, cutting boards. At this time we do not build chairs.</p>
+            <button class="faq-item__toggle" aria-expanded="false">
+              What kind of furniture do you build?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__answer" hidden>
+              <p>We build dining room tables, end tables, coffee tables, nightstands, desks, beds, and more. We also do smaller projects such as custom signs, coasters, cutting boards. At this time we do not build chairs.</p>
+            </div>
           </div>
 
           <div class="faq-item">
-            <h3 class="faq-item__question">How much will it cost?</h3>
-            <p class="faq-item__answer">Handmade objects are an investment, and working wood is notoriously time-consuming to build a piece that is beautiful and timeless. If you have a budget in mind, that will help us to set the scope of your project. Please expect to pay more than you would for any mass manufactured item because this is a unique, one-of-a-kind piece of furniture made from quality hardwood.</p>
+            <button class="faq-item__toggle" aria-expanded="false">
+              How much will it cost?
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__answer" hidden>
+              <p>Handmade objects are an investment, and working wood is notoriously time-consuming to build a piece that is beautiful and timeless. If you have a budget in mind, that will help us to set the scope of your project. Please expect to pay more than you would for any mass manufactured item because this is a unique, one-of-a-kind piece of furniture made from quality hardwood.</p>
+            </div>
           </div>
 
         </div>
@@ -130,25 +137,23 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__inner">
-      <div class="footer__logo">
-        <img src="assets/images/logo.png" alt="Chisel &amp; Groove Studio">
-      </div>
-      <div class="footer__divider"></div>
-      <nav class="footer__links" aria-label="Footer navigation">
+      <div class="footer__wordmark">Chisel &amp; Groove</div>
+      <div class="footer__bottom">
         <a href="privacy.html" class="footer__link">Privacy Policy</a>
-      </nav>
-      <div class="footer__social">
-        <a href="https://www.instagram.com/chiselandgroovestudio" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/share/19k8FDQpKM/" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
+        <p class="footer__copy">&copy;2025</p>
       </div>
-      <p class="footer__copy">&copy;2025 Chisel &amp; Groove Studio</p>
     </div>
   </footer>
 
   <script src="js/nav.js" defer></script>
+  <script>
+    document.querySelectorAll('.faq-item__toggle').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !expanded);
+        btn.nextElementSibling.hidden = expanded;
+      });
+    });
+  </script>
 </body>
 </html>
