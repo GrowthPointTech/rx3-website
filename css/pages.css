@@ -24,7 +24,7 @@
 }
 
 .home-hero {
-  min-height: calc(776px - var(--nav-height));
+  min-height: calc(100vh - var(--nav-height));
   padding-bottom: 4rem;
 }
 
