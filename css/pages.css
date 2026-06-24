@@ -36,8 +36,8 @@
 }
 
 .home-hero {
-  min-height: 100vh;
-  padding-bottom: calc(var(--nav-height) + 2rem);
+  min-height: 75vh;
+  padding-bottom: 3rem;
 }
 
 .home-features {
