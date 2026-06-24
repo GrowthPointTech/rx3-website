@@ -5,7 +5,10 @@
 /* ── HOME PAGE ── */
 .home-hero {
   background-image: url('../assets/images/hero-main.jpg');
-  background-position: center 70%;
+}
+
+.home-hero .hero__bg {
+  background-position: center bottom;
 }
 
 .home-hero .hero__overlay {
