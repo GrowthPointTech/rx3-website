@@ -88,10 +88,17 @@
 /* ── GALLERY PAGE ── */
 .gallery-hero {
   background-image: url('../assets/images/hero-main.jpg');
+  min-height: 60vh;
+  align-items: flex-end !important;
+  padding-bottom: var(--space-3xl) !important;
+}
+
+.gallery-hero .hero__title {
+  font-size: clamp(3rem, 7vw, 6.5rem);
 }
 
 .gallery-section {
-  background-color: var(--cg-off-white);
+  background-color: var(--cg-white);
   padding-block: var(--space-xl);
 }
 
