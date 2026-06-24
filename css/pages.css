@@ -5,6 +5,7 @@
 /* ── HOME PAGE ── */
 .home-hero {
   background-image: url('../assets/images/hero-main.jpg');
+  background-position: center 70%;
 }
 
 .home-hero .hero__overlay {
@@ -12,7 +13,7 @@
 }
 
 .home-hero .hero__title {
-  font-size: clamp(5rem, 11.91vw, 10.72rem);
+  font-size: clamp(6rem, 15vw, 14rem);
   letter-spacing: -0.02em;
   line-height: 0.77;
   text-align: center;
