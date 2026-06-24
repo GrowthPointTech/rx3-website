@@ -22,7 +22,7 @@
 }
 
 .home-hero .hero__title {
-  font-size: clamp(5rem, 13vw, 12rem);
+  font-size: clamp(5rem, 16vw, 15rem);
   letter-spacing: -0.02em;
   line-height: 1;
   text-align: center;
