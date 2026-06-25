@@ -24,7 +24,6 @@
 .home-hero .hero__title {
   font-size: clamp(4rem, 12vw, 14rem);
   font-weight: 400;
-  font-variation-settings: 'opsz' 96;
   letter-spacing: -0.02em;
   line-height: 0.77;
   text-align: center;

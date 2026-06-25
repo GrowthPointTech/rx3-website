@@ -16,9 +16,9 @@
   --cg-overlay-light: rgba(0, 0, 0, 0.35);
 
   /* ── Typography ── */
-  /* PP-Fragment (commercial) → Bodoni Moda (Google, closest high-contrast Didone serif) */
+  /* PP-Fragment (commercial) → Gloock (Google, closest high-contrast display serif) */
   /* myriad-pro (Adobe Typekit) → Source Sans 3 (Google, closest humanist sans-serif) */
-  --font-heading: 'Bodoni Moda', Georgia, 'Times New Roman', serif;
+  --font-heading: 'Gloock', Georgia, 'Times New Roman', serif;
   --font-body:    'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
 
   /* ── Font Sizes (scaled from computed px at 1440px viewport) ── */
