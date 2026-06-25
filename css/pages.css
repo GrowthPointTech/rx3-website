@@ -19,10 +19,11 @@
 
 .home-hero .hero__title {
   font-size: clamp(4rem, 11.9vw, 14rem);
-  font-weight: 400;
+  font-weight: 500;
+  font-variation-settings: 'opsz' 6;
   letter-spacing: -0.02em;
   line-height: 0.77;
-  text-align: left;
+  text-align: center;
   white-space: nowrap;
   margin-bottom: 0;
 }
