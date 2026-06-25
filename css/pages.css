@@ -17,16 +17,12 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.home-hero .hero__content {
-  padding-inline: 0;
-}
-
 .home-hero .hero__title {
-  font-size: clamp(4rem, 12vw, 14rem);
+  font-size: clamp(4rem, 11.9vw, 14rem);
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 0.77;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   margin-bottom: 0;
 }

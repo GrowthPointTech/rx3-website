@@ -16,7 +16,7 @@
   --cg-overlay-light: rgba(0, 0, 0, 0.35);
 
   /* ── Typography ── */
-  /* PP-Fragment (commercial) → Gloock (Google, closest high-contrast display serif) */
+  /* PP-Fragment (commercial) → Gloock (Google, closest match in weight/proportions) */
   /* myriad-pro (Adobe Typekit) → Source Sans 3 (Google, closest humanist sans-serif) */
   --font-heading: 'Gloock', Georgia, 'Times New Roman', serif;
   --font-body:    'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
