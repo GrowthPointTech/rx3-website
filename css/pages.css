@@ -240,6 +240,13 @@
   height: 420px;
 }
 
+/* Bench images (3 & 4) are wide/flat — contain shows the full piece */
+.gallery-grid .gallery-item:nth-child(3) .gallery-item__img-wrap img,
+.gallery-grid .gallery-item:nth-child(4) .gallery-item__img-wrap img {
+  object-fit: contain;
+  background-color: var(--cg-off-white);
+}
+
 .gallery-grid .gallery-item:nth-child(n+5) {
   grid-column: span 2;
 }
