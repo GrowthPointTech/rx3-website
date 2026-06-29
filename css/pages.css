@@ -219,10 +219,8 @@
 }
 
 .gallery-section .container {
-  padding-inline: var(--space-md);
-  max-width: 100vw;
-  width: 100vw;
-  margin-left: calc(-1 * (100vw - 100%) / 2);
+  padding-inline: 24px;
+  max-width: 1400px;
 }
 
 /* Row 1: 4 across — each spans 3 of 12 columns
