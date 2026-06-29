@@ -103,6 +103,11 @@
 
 .nav__link:hover { opacity: 0.6; }
 
+.nav__link--active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .nav__icons {
   display: flex;
   align-items: center;

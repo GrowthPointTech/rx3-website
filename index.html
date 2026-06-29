@@ -69,42 +69,50 @@
     <section class="hero home-hero">
       <div class="hero__bg" style="background-image: url('assets/images/hero-main.jpg');"></div>
       <div class="hero__overlay"></div>
-      <div class="hero__content">
+      <div class="hero__content home-hero__content">
         <h1 class="hero__title">Chisel &amp; Groove</h1>
       </div>
     </section>
 
-    <!-- FEATURE IMAGES -->
+    <!-- FEATURE — two-column: text left, large image right -->
     <section class="home-features">
       <div class="container">
-        <h2 class="section-title">Custom Designed Furniture</h2>
-        <div class="section-body">
-          <p>Chisel &amp; Groove designs and builds unique, one-of-a-kind furniture and wood products. We love turning your vision into real pieces that are perfectly tailored for you.</p>
-          <p>If you have an idea you want to explore, check out our <a href="our-process.html" style="text-decoration:underline;">Our Process</a> page to find out how we work and your next step!</p>
+        <div class="home-features__inner">
+        <div class="home-features__two-col">
+          <div class="home-features__text">
+            <h2 class="section-title">Custom Designed<br>Furniture</h2>
+            <div class="section-body">
+              <p>Chisel &amp; Groove designs and builds unique, one-of-a-kind furniture and wood products. We love turning your vision into real pieces that are perfectly tailored for you.  Check out our gallery of prior pieces.</p>
+              <p>If you have an idea you want to explore, check out our <a href="our-process.html">Our Process</a> page to find out how we work and your next step!</p>
+            </div>
+            <a href="gallery.html" class="btn btn--arrow btn--dark">View Gallery</a>
+          </div>
+          <div class="home-features__main-img">
+            <img src="assets/images/home-feature-3.jpg" alt="Custom walnut nightstand">
+          </div>
         </div>
-        <a href="gallery.html" class="btn btn--arrow btn--dark">View Gallery</a>
         <div class="home-features__grid">
           <div class="gallery-item">
-            <img src="assets/images/home-feature-2.jpg" alt="Custom walnut furniture">
+            <img src="assets/images/home-feature-2.jpg" alt="Custom walnut furniture detail">
           </div>
           <div class="gallery-item">
-            <img src="assets/images/home-feature-1.jpg" alt="Handcrafted wood pieces">
-          </div>
-          <div class="gallery-item">
-            <img src="assets/images/home-feature-3.jpg" alt="Fine woodworking detail">
+            <img src="assets/images/home-feature-1.jpg" alt="Handcrafted walnut desk">
           </div>
         </div>
+        </div><!-- /.home-features__inner -->
       </div>
     </section>
 
     <!-- CTA BAND -->
     <section class="home-cta">
       <div class="container">
-        <h2 class="section-title">Ready to get started?</h2>
-        <div class="section-body">
-          <p>Every project begins with a conversation.</p>
+        <div class="home-cta__inner">
+          <h2 class="section-title home-cta__heading">Ready to<br>get started?</h2>
+          <div class="home-cta__right">
+            <p class="home-cta__body">Every project begins with a conversation.</p>
+            <a href="contact.html" class="btn btn--arrow">Contact Us</a>
+          </div>
         </div>
-        <a href="contact.html" class="btn btn--arrow">Contact Us</a>
       </div>
     </section>
   </main>
