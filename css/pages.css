@@ -5,6 +5,8 @@
 /* ── HOME PAGE ── */
 .home-hero {
   background-image: url('../assets/images/hero-main.jpg');
+  align-items: center;
+  min-height: 55vh;
 }
 
 .home-hero .hero__bg {
@@ -42,20 +44,74 @@
   padding-block: var(--space-2xl);
 }
 
+/* Inset inner wrapper — matches live site narrower content block */
+.home-features__inner {
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+/* Two-column: text left, large image right */
+.home-features__two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+  margin-bottom: var(--space-xl);
+}
+
+.home-features__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-top: var(--space-lg);
+}
+
+.home-features__text .section-title {
+  line-height: 1.1;
+}
+
+.home-features__text .section-body {
+  font-size: var(--text-body);
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.home-features__text .section-body a {
+  color: var(--cg-charcoal);
+  text-decoration: underline;
+}
+
+.home-features__main-img img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Two-image grid below — left-aligned, narrower */
 .home-features__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-top: var(--space-xl);
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 460px;
 }
 
 .home-features__grid .gallery-item img {
-  height: 380px;
+  height: 220px;
 }
 
 @media (max-width: 900px) {
+  .home-features__inner {
+    max-width: 100%;
+  }
+  .home-features__two-col {
+    grid-template-columns: 1fr;
+  }
+  .home-features__main-img img {
+    height: 300px;
+  }
   .home-features__grid {
-    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
   }
 }
 
@@ -64,7 +120,7 @@
     grid-template-columns: 1fr;
   }
   .home-features__grid .gallery-item img {
-    height: 280px;
+    height: 220px;
   }
 }
 
@@ -87,9 +143,39 @@
   position: relative;
   z-index: 1;
   padding-block: var(--space-3xl);
+}
+
+/* Two-column CTA: heading left, body+button right */
+.home-cta__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.home-cta__heading {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 0;
+}
+
+.home-cta__right {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
+}
+
+.home-cta__body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--cg-white);
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .home-cta__inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 .home-cta .section-title,
