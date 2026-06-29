@@ -16,7 +16,7 @@
   background-color: var(--cg-white);
   border-bottom: 1px solid var(--cg-silver);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .nav--transparent {
