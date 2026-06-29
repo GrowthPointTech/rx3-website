@@ -16,16 +16,16 @@
   --cg-overlay-light: rgba(0, 0, 0, 0.35);
 
   /* ── Typography ── */
-  /* PP-Fragment (commercial) → Cormorant Garamond (Google, closest high-contrast serif) */
+  /* PP-Fragment (commercial) → Bodoni Moda (Google variable font, opsz=6 on hero) */
   /* myriad-pro (Adobe Typekit) → Source Sans 3 (Google, closest humanist sans-serif) */
-  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-heading: 'Bodoni Moda', Georgia, 'Times New Roman', serif;
   --font-body:    'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
 
   /* ── Font Sizes (scaled from computed px at 1440px viewport) ── */
   /* Live: h1=171.52px, h2=119.68px, h3=76.48px — very large display sizes */
   --text-hero:    clamp(3.5rem,  9vw,  8rem);    /* ~171px at 1440 */
   --text-display: clamp(3rem,    7vw,  6.5rem);   /* ~119px at 1440 */
-  --text-h2:      clamp(2rem,    4vw,  3.5rem);   /* used for section headings */
+  --text-h2:      clamp(2rem,    5.3vw, 4.78rem);  /* ~76px at 1440 — matches live site h3/section headings */
   --text-h3:      clamp(1.5rem,  3vw,  2.5rem);   /* ~76px at 1440 */
   --text-large:   clamp(1.1rem,  1.5vw, 1.43rem); /* ~22.9px (about page body) */
   --text-body:    1rem;                            /* 16px */
@@ -47,6 +47,6 @@
   --site-gutter-mobile: 6vw;
 
   /* ── Nav ── */
-  --nav-height: 80px;
-  --nav-height-mobile: 64px;
+  --nav-height: 138px;
+  --nav-height-mobile: 70px;
 }
