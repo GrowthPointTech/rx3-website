@@ -22,9 +22,9 @@
 }
 
 .home-hero .hero__title {
+  font-family: PP-Fragment !important;
   font-size: clamp(4rem, 10vw, 12rem);
-  font-weight: 500;
-  font-variation-settings: 'opsz' 6;
+  font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 0.77;
   text-align: center;
