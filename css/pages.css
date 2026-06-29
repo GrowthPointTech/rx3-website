@@ -144,7 +144,7 @@
 }
 
 .gallery-grid .gallery-item:nth-child(-n+4) .gallery-item__img-wrap img {
-  height: 320px;
+  height: 420px;
 }
 
 .gallery-grid .gallery-item:nth-child(n+5) {
@@ -152,7 +152,7 @@
 }
 
 .gallery-grid .gallery-item:nth-child(n+5) .gallery-item__img-wrap img {
-  height: 240px;
+  height: 320px;
 }
 
 @media (max-width: 900px) {
