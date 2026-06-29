@@ -132,76 +132,27 @@
   padding-block: var(--space-xl);
 }
 
-/* Gallery 2-3-3-2 grid layout */
+/* Row 1: 4 across — each spans 3 of 12 columns
+   Row 2: 6 across — each spans 2 of 12 columns */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(12, 1fr);
   gap: 8px;
 }
 
-/* Items 1-2: row 1 — half width, tall */
-.gallery-grid .gallery-item:nth-child(1),
-.gallery-grid .gallery-item:nth-child(2) {
-  grid-column: span 1;
-}
-
-.gallery-grid .gallery-item:nth-child(1) .gallery-item__img-wrap img,
-.gallery-grid .gallery-item:nth-child(2) .gallery-item__img-wrap img {
-  height: 380px;
-  object-fit: cover;
-}
-
-/* Items 3-8: rows 2 and 3 — one-third width, shorter */
-.gallery-grid .gallery-item:nth-child(3),
-.gallery-grid .gallery-item:nth-child(4),
-.gallery-grid .gallery-item:nth-child(5),
-.gallery-grid .gallery-item:nth-child(6),
-.gallery-grid .gallery-item:nth-child(7),
-.gallery-grid .gallery-item:nth-child(8) {
-  grid-column: span 1;
-}
-
-.gallery-grid .gallery-item:nth-child(3) .gallery-item__img-wrap img,
-.gallery-grid .gallery-item:nth-child(4) .gallery-item__img-wrap img,
-.gallery-grid .gallery-item:nth-child(5) .gallery-item__img-wrap img,
-.gallery-grid .gallery-item:nth-child(6) .gallery-item__img-wrap img,
-.gallery-grid .gallery-item:nth-child(7) .gallery-item__img-wrap img,
-.gallery-grid .gallery-item:nth-child(8) .gallery-item__img-wrap img {
-  height: 260px;
-  object-fit: cover;
-}
-
-/* Items 9-10: row 4 — half width, tall */
-.gallery-grid .gallery-item:nth-child(9) .gallery-item__img-wrap img,
-.gallery-grid .gallery-item:nth-child(10) .gallery-item__img-wrap img {
-  height: 380px;
-  object-fit: cover;
-}
-
-/* Use a subgrid approach: 2-col base, items 3-8 use 3 columns */
-/* Restructure: use a 6-column grid so we can span correctly */
-.gallery-grid {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.gallery-grid .gallery-item:nth-child(1),
-.gallery-grid .gallery-item:nth-child(2) {
+.gallery-grid .gallery-item:nth-child(-n+4) {
   grid-column: span 3;
 }
 
-.gallery-grid .gallery-item:nth-child(3),
-.gallery-grid .gallery-item:nth-child(4),
-.gallery-grid .gallery-item:nth-child(5),
-.gallery-grid .gallery-item:nth-child(6),
-.gallery-grid .gallery-item:nth-child(7),
-.gallery-grid .gallery-item:nth-child(8) {
+.gallery-grid .gallery-item:nth-child(-n+4) .gallery-item__img-wrap img {
+  height: 320px;
+}
+
+.gallery-grid .gallery-item:nth-child(n+5) {
   grid-column: span 2;
 }
 
-.gallery-grid .gallery-item:nth-child(9),
-.gallery-grid .gallery-item:nth-child(10) {
-  grid-column: span 3;
+.gallery-grid .gallery-item:nth-child(n+5) .gallery-item__img-wrap img {
+  height: 240px;
 }
 
 @media (max-width: 900px) {
@@ -212,8 +163,7 @@
     grid-column: span 1;
   }
   .gallery-grid .gallery-item:nth-child(n) .gallery-item__img-wrap img {
-    height: 240px;
-    object-fit: cover;
+    height: 220px;
   }
 }
 
@@ -223,7 +173,7 @@
     gap: 0;
   }
   .gallery-grid .gallery-item:nth-child(n) .gallery-item__img-wrap img {
-    height: 220px;
+    height: 200px;
   }
 }
 
