@@ -26,8 +26,10 @@
   font-size: clamp(4rem, 10vw, 12rem);
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 0.9;
-  margin-bottom: var(--space-md);
+  line-height: 0.77;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 0;
 }
 
 .home-hero {
