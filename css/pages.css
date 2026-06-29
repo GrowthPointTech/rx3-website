@@ -132,6 +132,11 @@
   padding-block: var(--space-xl);
 }
 
+.gallery-section .container {
+  padding-inline: 0;
+  max-width: 100%;
+}
+
 /* Row 1: 4 across — each spans 3 of 12 columns
    Row 2: 6 across — each spans 2 of 12 columns */
 .gallery-grid {
