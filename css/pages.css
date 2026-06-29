@@ -245,12 +245,6 @@
   height: 360px;
 }
 
-/* Bench images (3 & 4) are wide/flat — contain shows the full piece */
-.gallery-grid .gallery-item:nth-child(3) .gallery-item__img-wrap img,
-.gallery-grid .gallery-item:nth-child(4) .gallery-item__img-wrap img {
-  object-fit: contain;
-  background-color: var(--cg-off-white);
-}
 
 @media (max-width: 900px) {
   .gallery-grid {
