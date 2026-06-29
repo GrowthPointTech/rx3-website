@@ -23,6 +23,7 @@ body {
   background-color: var(--cg-off-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* ── Headings ── */
