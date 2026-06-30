@@ -411,6 +411,14 @@
 }
 
 /* ── CONTACT PAGE ── */
+.contact-hero {
+  background-image: url('../assets/images/hero-main.jpg');
+}
+
+.contact-hero__content {
+  text-align: center;
+}
+
 .contact-hero .hero__title {
   font-size: clamp(4rem, 11.9vw, 10.72rem);
   line-height: 0.97;
@@ -419,24 +427,38 @@
 
 .contact-section {
   background-color: var(--cg-off-white);
+  padding-block: var(--space-3xl);
 }
 
 .contact-intro {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 5.3vw, 4.78rem);
-  line-height: 1.03;
+  line-height: 1.0;
   letter-spacing: -0.02em;
   color: var(--cg-charcoal);
   font-weight: 400;
   margin: 0;
+  padding-top: var(--space-lg);
 }
 
+/* Two-column: heading left, form right */
 .contact-details {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: var(--space-xl);
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
   align-items: start;
-  margin-bottom: var(--space-2xl);
+}
+
+.contact-form-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (max-width: 900px) {
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-info {
