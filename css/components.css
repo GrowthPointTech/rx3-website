@@ -721,20 +721,16 @@
   position: relative;
 }
 
-.footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 5%;
-  right: 5%;
-  height: 1px;
-  background-image: repeating-linear-gradient(
-    90deg,
-    var(--cg-silver) 0,
-    var(--cg-silver) 6px,
-    transparent 6px,
-    transparent 13px
-  );
+.footer-wave {
+  line-height: 0;
+  background-color: var(--cg-white);
+  display: block;
+}
+
+.footer-wave svg {
+  display: block;
+  width: 100%;
+  height: 80px;
 }
 
 .footer__inner {
@@ -750,7 +746,7 @@
 
 .footer__wordmark {
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: clamp(3rem, 5.31vw, 5.5rem);
   font-weight: 400;
   color: var(--cg-gray);
   line-height: 1.1;
