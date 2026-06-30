@@ -321,6 +321,11 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.gallery-hero .hero__content {
+  padding-inline: 0;
+  max-width: none;
+}
+
 .gallery-hero__title {
   font-family: PP-Fragment !important;
   font-style: normal;
