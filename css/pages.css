@@ -189,12 +189,124 @@
   background-image: url('../assets/images/hero-process.jpg');
 }
 
+/* Center hero title */
+.process-hero__content {
+  text-align: center;
+}
+
 .process-section {
   background-color: var(--cg-off-white);
+  padding-block: var(--space-2xl);
+}
+
+/* 2×2 grid matching live site */
+.process-grid--2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl) var(--space-xl);
+}
+
+/* Small "Step N" label above each heading */
+.process-step__label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--cg-charcoal);
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-sm);
+}
+
+/* Large display-size step headings */
+.process-grid--2col .process-step__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 400;
+  color: var(--cg-gray);
+  line-height: 1.05;
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.01em;
+}
+
+.process-step__body {
+  font-size: var(--text-body);
+  color: var(--cg-charcoal);
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .process-grid--2col {
+    grid-template-columns: 1fr;
+  }
 }
 
 .process-faq {
   background-color: var(--cg-cream);
+  padding-block: var(--space-2xl);
+}
+
+/* Large centered FAQ heading */
+.faq-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 400;
+  color: var(--cg-gray);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* FAQ accordion */
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  border-top: 1px solid var(--cg-silver);
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid var(--cg-silver);
+}
+
+.faq-item__toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-item__question {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: 400;
+  color: var(--cg-gray);
+  line-height: 1.2;
+}
+
+.faq-item__icon {
+  font-size: 1.25rem;
+  color: var(--cg-charcoal);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.faq-item__body {
+  padding-bottom: var(--space-md);
+}
+
+.faq-item__answer {
+  font-size: var(--text-body);
+  color: var(--cg-charcoal);
+  line-height: 1.7;
 }
 
 /* ── GALLERY PAGE ── */
