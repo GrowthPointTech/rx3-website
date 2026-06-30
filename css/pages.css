@@ -312,16 +312,20 @@
 /* ── GALLERY PAGE ── */
 .gallery-hero {
   background-image: url('../assets/images/hero-main.jpg');
-  min-height: 60vh;
+  min-height: 86vh;
   align-items: flex-end;
   padding-bottom: var(--space-3xl);
 }
 
+.gallery-hero .hero__overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .gallery-hero__title {
-  font-style: italic;
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-style: normal;
+  font-size: clamp(3rem, 9vw, 9rem);
   font-weight: 300;
-  line-height: 1.05;
+  line-height: 1.0;
   margin-bottom: 0;
 }
 
