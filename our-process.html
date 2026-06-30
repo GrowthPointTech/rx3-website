@@ -51,34 +51,43 @@
   </div>
 
   <main>
+
+    <!-- HERO -->
+    <section class="hero hero--short process-hero">
+      <div class="hero__bg" style="background-image: url('assets/images/hero-process.jpg');"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content process-hero__content">
+        <h1 class="hero__title">Process Steps</h1>
+      </div>
+    </section>
+
     <!-- PROCESS STEPS -->
     <section class="section process-section">
       <div class="container">
-        <h1 class="section-title" style="font-size: var(--text-display); margin-bottom: var(--space-xl);">Process Steps</h1>
-        <div class="process-grid">
+        <div class="process-grid process-grid--2col">
 
           <div class="process-step">
-            <div class="process-step__number">01</div>
-            <h2 class="process-step__title">Initial Consultation</h2>
-            <p class="process-step__body">This is an initial free 30-minute consultation where we discuss your idea and go over the process and potential costs. This can be over the phone, virtual meeting or on-site. We identify a target budget and discuss your idea and wood and finish.</p>
+            <div class="process-step__label">Step 1</div>
+            <h2 class="process-step__title">Initial<br>Consultation</h2>
+            <p class="process-step__body">This is an initial free 30-minute consultation where we discuss your idea and go over the process and potential costs.  This can be over the phone, virtual meeting or on-site.  We identify a target budget and discuss your idea and wood and finish.</p>
           </div>
 
           <div class="process-step">
-            <div class="process-step__number">02</div>
-            <h2 class="process-step__title">Collaborative Design Step</h2>
-            <p class="process-step__body">If we agree to move ahead, we move to the design step where we do some initial sketching and modeling. This design step requires a deposit to cover the design effort. The result of this step is a detailed dimensioned design, finish details, wood selection and a proposed cost and timeline for a build. We will sign a simple contract if you decide to move ahead.</p>
+            <div class="process-step__label">Step 2</div>
+            <h2 class="process-step__title">Collaborative<br>Design Step</h2>
+            <p class="process-step__body">If we agree to move ahead, we move to the design step where we do some initial sketching and modeling.  This design step requires a deposit to cover the design effort.  The result of this step is a detailed dimensioned design, finish details, wood selection and a proposed cost and timeline for a build.  We will sign a simple contract if you decide to move ahead.</p>
           </div>
 
           <div class="process-step">
-            <div class="process-step__number">03</div>
-            <h2 class="process-step__title">Deposit &amp; Build Begins</h2>
-            <p class="process-step__body">A few weeks before the building begins, we will collect a 50% deposit and order materials. You can opt into process photos as the building gets underway.</p>
+            <div class="process-step__label">Step 3</div>
+            <h2 class="process-step__title">Deposit &amp; Build<br>Begins</h2>
+            <p class="process-step__body">A few weeks before the building begins, we will collect a 50% deposit and order materials.  You can opt into process photos as the building gets underway.</p>
           </div>
 
           <div class="process-step">
-            <div class="process-step__number">04</div>
-            <h2 class="process-step__title">Delivery &amp; Final Payment</h2>
-            <p class="process-step__body">We provide free delivery within a 50-mile radius of Pittsboro, NC. Full payment is due at the time of delivery. Delivery outside of that radius can be provided for an extra fee. You can always pick up your final piece yourself for free!</p>
+            <div class="process-step__label">Step 4</div>
+            <h2 class="process-step__title">Delivery &amp; Final<br>Payment</h2>
+            <p class="process-step__body">We provide free delivery within a 50-mile radius of Pittsboro, NC.  Full payment is due at the time of delivery.  Delivery outside of that radius can be provided for an extra fee.  You can always pick up your final piece yourself for free!</p>
           </div>
 
         </div>
@@ -88,36 +97,36 @@
     <!-- FAQ -->
     <section class="section process-faq">
       <div class="container">
-        <h2 class="section-title">FAQ's</h2>
+        <h2 class="faq-heading">FAQ&#8217;s</h2>
         <div class="faq-list">
 
           <div class="faq-item">
-            <button class="faq-item__toggle" aria-expanded="false">
-              What woods do you work in?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
+            <button class="faq-item__toggle" aria-expanded="true">
+              <span class="faq-item__question">What woods do you work in?</span>
+              <span class="faq-item__icon" aria-hidden="true">&#8722;</span>
             </button>
-            <div class="faq-item__answer" hidden>
-              <p>We usually work in local hardwoods such as Ash, Birch, Cherry, Maple, Poplar, Walnut, and White Oak.</p>
+            <div class="faq-item__body">
+              <p class="faq-item__answer">We usually work in local hardwoods such as Ash, Birch, Cherry, Maple, Poplar, Walnut, and White Oak.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-item__toggle" aria-expanded="false">
-              What kind of furniture do you build?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
+              <span class="faq-item__question">What kind of furniture do you build?</span>
+              <span class="faq-item__icon" aria-hidden="true">&#43;</span>
             </button>
-            <div class="faq-item__answer" hidden>
-              <p>We build dining room tables, end tables, coffee tables, nightstands, desks, beds, and more. We also do smaller projects such as custom signs, coasters, cutting boards. At this time we do not build chairs.</p>
+            <div class="faq-item__body" hidden>
+              <p class="faq-item__answer">We build dining room tables, end tables, coffee tables, nightstands, desks, beds, and more. We also do smaller projects such as custom signs, coasters, cutting boards. At this time we do not build chairs.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-item__toggle" aria-expanded="false">
-              How much will it cost?
-              <span class="faq-item__icon" aria-hidden="true">+</span>
+              <span class="faq-item__question">How much will it cost?</span>
+              <span class="faq-item__icon" aria-hidden="true">&#43;</span>
             </button>
-            <div class="faq-item__answer" hidden>
-              <p>Handmade objects are an investment, and working wood is notoriously time-consuming to build a piece that is beautiful and timeless. If you have a budget in mind, that will help us to set the scope of your project. Please expect to pay more than you would for any mass manufactured item because this is a unique, one-of-a-kind piece of furniture made from quality hardwood.</p>
+            <div class="faq-item__body" hidden>
+              <p class="faq-item__answer">Handmade objects are an investment, and working wood is notoriously time-consuming to build a piece that is beautiful and timeless. If you have a budget in mind, that will help us to set the scope of your project. Please expect to pay more than you would for any mass manufactured item because this is a unique, one-of-a-kind piece of furniture made from quality hardwood.</p>
             </div>
           </div>
 
@@ -149,9 +158,14 @@
   <script>
     document.querySelectorAll('.faq-item__toggle').forEach(function(btn) {
       btn.addEventListener('click', function() {
-        var expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', !expanded);
-        btn.nextElementSibling.hidden = expanded;
+        var item = btn.closest('.faq-item');
+        var body = item.querySelector('.faq-item__body');
+        var icon = btn.querySelector('.faq-item__icon');
+        var isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !isOpen);
+        icon.textContent = isOpen ? '+' : '−';
+        if (isOpen) { body.setAttribute('hidden', ''); }
+        else { body.removeAttribute('hidden'); }
       });
     });
   </script>
