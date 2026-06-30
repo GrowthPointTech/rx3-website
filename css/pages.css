@@ -322,10 +322,12 @@
 }
 
 .gallery-hero__title {
+  font-family: PP-Fragment !important;
   font-style: normal;
-  font-size: clamp(3rem, 9vw, 9rem);
-  font-weight: 300;
-  line-height: 1.0;
+  font-size: clamp(3rem, 8.31vw, 8rem);
+  font-weight: 400;
+  line-height: 0.91;
+  letter-spacing: -0.02em;
   margin-bottom: 0;
 }
 
