@@ -322,12 +322,14 @@
 }
 
 .gallery-hero__title {
-  font-family: PP-Fragment !important;
+  font-family: PP-Fragment, "Bodoni Moda", serif !important;
   font-style: normal;
   font-size: clamp(3rem, 8.31vw, 8rem);
   font-weight: 400;
+  font-variation-settings: 'opsz' 6;
   line-height: 0.91;
   letter-spacing: -0.02em;
+  text-align: center;
   margin-bottom: 0;
 }
 
