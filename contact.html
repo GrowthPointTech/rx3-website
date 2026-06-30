@@ -53,9 +53,9 @@
   <main>
     <!-- HERO -->
     <section class="hero contact-hero">
-      <div class="hero__bg" style="background-image: url('assets/images/hero-about.jpg');"></div>
+      <div class="hero__bg" style="background-image: url('assets/images/hero-main.jpg');"></div>
       <div class="hero__overlay"></div>
-      <div class="hero__content">
+      <div class="hero__content contact-hero__content">
         <h1 class="hero__title">Contact Us</h1>
       </div>
     </section>
@@ -63,8 +63,9 @@
     <!-- CONTACT SECTION -->
     <section class="section contact-section">
       <div class="container">
-        <h2 class="contact-intro">Start Your Journey</h2>
-
+        <div class="contact-details">
+          <h2 class="contact-intro">Start Your<br>Journey</h2>
+          <div class="contact-form-wrap">
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeewylep" method="POST">
           <div class="form-row">
             <div class="form-group">
@@ -98,6 +99,8 @@
         <div class="form-success" id="formSuccess">
           Thank you! Someone will respond to your inquiry shortly.
         </div>
+          </div><!-- /.contact-form-wrap -->
+        </div><!-- /.contact-details -->
       </div>
     </section>
   </main>
