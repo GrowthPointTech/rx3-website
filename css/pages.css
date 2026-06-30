@@ -330,52 +330,15 @@
   padding-block: var(--space-xl);
 }
 
-.gallery-section .container {
-  padding-inline: 24px;
-  max-width: 1400px;
-}
-
-/* Row 1: 4 across — each spans 3 of 12 columns
-   Row 2: 6 across — each spans 2 of 12 columns */
-.gallery-grid {
-  grid-template-columns: repeat(12, 1fr);
-  gap: 8px;
-}
-
-.gallery-grid .gallery-item:nth-child(-n+4) {
-  grid-column: span 3;
-}
-
-.gallery-grid .gallery-item:nth-child(n+5) {
-  grid-column: span 2;
-}
-
-/* Uniform height for all images */
-.gallery-grid .gallery-item .gallery-item__img-wrap img {
-  height: 360px;
-}
-
+/* Per-strip heights match the live Squarespace Gallery Strips algorithm:
+   h = (container_width - (n-1)×gutter) / sum(aspect_ratios)
+   Computed at 1325px container (1440px viewport − 2×4vw), gutter 20px */
+.gallery-grid .gallery-strip:nth-child(1) .gallery-item img { height: 293px; }
+.gallery-grid .gallery-strip:nth-child(2) .gallery-item img { height: 353px; }
+.gallery-grid .gallery-strip:nth-child(3) .gallery-item img { height: 253px; }
 
 @media (max-width: 900px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .gallery-grid .gallery-item:nth-child(n) {
-    grid-column: span 1;
-  }
-  .gallery-grid .gallery-item .gallery-item__img-wrap img {
-    height: 220px;
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-  .gallery-grid .gallery-item .gallery-item__img-wrap img {
-    height: 200px;
-  }
+  .gallery-grid .gallery-strip .gallery-item img { height: 220px; }
 }
 
 /* ── ABOUT PAGE ── */
