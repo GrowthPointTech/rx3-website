@@ -347,8 +347,8 @@
    h = (container_width - (n-1)×gutter) / sum(aspect_ratios)
    Computed at 1325px container (1440px viewport − 2×4vw), gutter 20px */
 .gallery-grid .gallery-strip:nth-child(1) .gallery-item img { height: 293px; }
-.gallery-grid .gallery-strip:nth-child(2) .gallery-item img { height: 353px; }
-.gallery-grid .gallery-strip:nth-child(3) .gallery-item img { height: 253px; }
+.gallery-grid .gallery-strip:nth-child(2) .gallery-item img { height: 261px; }
+.gallery-grid .gallery-strip:nth-child(3) .gallery-item img { height: 340px; }
 
 @media (max-width: 900px) {
   .gallery-grid .gallery-strip .gallery-item img { height: 220px; }
