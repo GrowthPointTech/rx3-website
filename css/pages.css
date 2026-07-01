@@ -398,15 +398,31 @@
   max-width: 879px;
 }
 
-/* Squarespace's fluid-engine grid doesn't scale linearly between mobile and
-   desktop tiers — at tablet widths the image column is much narrower/taller
-   than a simple interpolation of the desktop crop (measured at 834px). */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* Live's fluid-engine grid scales the image column continuously with
+   viewport width — left offset and column width track ~15.6vw / ~30vw
+   almost exactly at every width we sampled (768-1920px), so express those
+   as proportional formulas instead of a fixed px cap. The crop's aspect
+   ratio does NOT scale linearly (it goes from ~0.33 at 768px to ~0.86 at
+   1920px), so that part still needs per-breakpoint calibration below,
+   measured directly against the live site at each width. */
+@media (min-width: 768px) {
   .about-content {
-    grid-template-columns: 1.35fr 1fr;
-    gap: 76px;
-    max-width: 508px;
-    margin-left: 98px;
+    max-width: 61.04vw;
+    gap: 8.451vw;
+    margin-left: 11.6vw;
+  }
+}
+
+/* Our .container caps at var(--site-max) (1500px) and centers itself beyond
+   that viewport width, but the margin-left formula above assumes an
+   uncapped, full-viewport-relative container — past 1500px it would push
+   .about-content far enough right that its own max-width can't fit in the
+   remaining space before the container's padding, silently shrinking it.
+   This re-derives margin-left relative to the now-capped+centered container
+   so the total left offset from the viewport edge stays at ~15.6vw. */
+@media (min-width: 1500px) {
+  .about-content {
+    margin-left: calc(750px - 38.4vw);
   }
 }
 
@@ -418,12 +434,30 @@
   display: block;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .about-owner-photo { aspect-ratio: 248 / 646; }
-}
+/* Aspect ratio calibrated against live at each width — not linear, see above. */
+@media (min-width: 768px)  { .about-owner-photo { aspect-ratio: 228 / 685; } }
+@media (min-width: 800px)  { .about-owner-photo { aspect-ratio: 238 / 692; } }
+@media (min-width: 834px)  { .about-owner-photo { aspect-ratio: 248 / 646; } }
+@media (min-width: 900px)  { .about-owner-photo { aspect-ratio: 269 / 633; } }
+@media (min-width: 950px)  { .about-owner-photo { aspect-ratio: 284 / 609; } }
+@media (min-width: 1000px) { .about-owner-photo { aspect-ratio: 299 / 593; } }
+@media (min-width: 1024px) { .about-owner-photo { aspect-ratio: 307 / 596; } }
+@media (min-width: 1100px) { .about-owner-photo { aspect-ratio: 330 / 607; } }
+@media (min-width: 1150px) { .about-owner-photo { aspect-ratio: 345 / 591; } }
+@media (min-width: 1200px) { .about-owner-photo { aspect-ratio: 361 / 598; } }
+@media (min-width: 1250px) { .about-owner-photo { aspect-ratio: 376 / 581; } }
+@media (min-width: 1280px) { .about-owner-photo { aspect-ratio: 385 / 585; } }
+@media (min-width: 1366px) { .about-owner-photo { aspect-ratio: 412 / 598; } }
+@media (min-width: 1440px) { .about-owner-photo { aspect-ratio: 434 / 585; } }
+@media (min-width: 1500px) { .about-owner-photo { aspect-ratio: 453 / 568; } }
+@media (min-width: 1600px) { .about-owner-photo { aspect-ratio: 483 / 586; } }
+@media (min-width: 1920px) { .about-owner-photo { aspect-ratio: 581 / 675; } }
 
 @media (max-width: 767px) {
-  .about-owner-photo { aspect-ratio: 343 / 199; }
+  .about-owner-photo {
+    aspect-ratio: unset;
+    height: 199px;
+  }
 }
 
 .about-text {
@@ -458,7 +492,7 @@
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about-content {
     grid-template-columns: 1fr;
     gap: 11px;
