@@ -406,6 +406,7 @@
     grid-template-columns: 1.35fr 1fr;
     gap: 76px;
     max-width: 508px;
+    margin-left: 98px;
   }
 }
 
