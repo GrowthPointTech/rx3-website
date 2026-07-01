@@ -27,7 +27,7 @@
   --text-display: clamp(3rem,    7vw,  6.5rem);   /* ~119px at 1440 */
   --text-h2:      clamp(2rem,    5.3vw, 4.78rem);  /* ~76px at 1440 — matches live site h3/section headings */
   --text-h3:      clamp(1.5rem,  3vw,  2.5rem);   /* ~76px at 1440 */
-  --text-large:   clamp(1.1rem,  1.5vw, 1.43rem); /* ~22.9px (about page body) */
+  --text-large:   clamp(1.1rem,  1.591vw, 1.432rem); /* ~22.9px — about page accent title */
   --text-body:    1rem;                            /* 16px */
   --text-nav:     1.108rem;                        /* ~17.7px */
   --text-small:   0.875rem;
