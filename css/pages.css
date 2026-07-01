@@ -398,12 +398,27 @@
   max-width: 879px;
 }
 
+/* Squarespace's fluid-engine grid doesn't scale linearly between mobile and
+   desktop tiers — at tablet widths the image column is much narrower/taller
+   than a simple interpolation of the desktop crop (measured at 834px). */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1.35fr 1fr;
+    gap: 76px;
+    max-width: 508px;
+  }
+}
+
 .about-owner-photo {
   width: 100%;
   aspect-ratio: 434 / 585;
   object-fit: cover;
   object-position: center center;
   display: block;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-owner-photo { aspect-ratio: 248 / 646; }
 }
 
 @media (max-width: 767px) {
