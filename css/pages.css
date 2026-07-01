@@ -355,71 +355,97 @@
 }
 
 /* ── ABOUT PAGE ── */
+.about-hero {
+  min-height: 84vh;
+  align-items: flex-end;
+  padding-bottom: 6.4rem;
+}
+
+@media (max-width: 767px) {
+  .about-hero {
+    min-height: 42vw;
+    padding-bottom: 18.7vw;
+  }
+}
+
+.about-hero .hero__overlay {
+  background-color: transparent;
+}
+
 .about-hero .hero__title {
   font-size: clamp(4rem, 11.9vw, 10.72rem);
-  line-height: 0.97;
+  line-height: 0.768;
   letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .about-section {
   background-color: var(--cg-off-white);
 }
 
+@media (max-width: 767px) {
+  .about-section {
+    padding-block: 3.4rem 1.5rem;
+  }
+}
+
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-xl);
-  align-items: start;
-  max-width: 960px;
-}
-
-.about-photo img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.about-heading {
-  font-family: var(--font-heading);
-  font-weight: 400;
-  font-size: clamp(2rem, 5.3vw, 4.78rem);
-  line-height: 1.03;
-  letter-spacing: -0.02em;
-  color: var(--cg-charcoal);
-  margin-bottom: var(--space-md);
-}
-
-.about-content .section-body {
-  font-size: var(--text-large);
-  max-width: 100%;
+  grid-template-columns: 1.3446fr 1fr;
+  gap: 121.7px;
+  align-items: center;
+  max-width: 879px;
 }
 
 .about-owner-photo {
   width: 100%;
-  max-width: 460px;
-  height: 360px;
+  aspect-ratio: 434 / 585;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   display: block;
-  margin-bottom: var(--space-lg);
 }
 
 @media (max-width: 767px) {
-  .about-owner-photo { height: 260px; max-width: 100%; }
+  .about-owner-photo { aspect-ratio: 343 / 199; }
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+  font-family: var(--font-body);
+  font-size: var(--text-large);
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--cg-gray);
+  margin-bottom: var(--space-sm);
+}
+
+.about-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--cg-gray);
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 
 .about-attribution {
-  font-family: var(--font-heading);
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  font-style: italic;
-  color: var(--cg-charcoal);
-  margin-top: var(--space-lg);
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 700;
+  font-style: normal;
+  color: var(--cg-gray);
+  margin-top: var(--space-sm);
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;
+    gap: 11px;
   }
 }
 
